@@ -23,7 +23,8 @@ export default class UserList extends React.Component {
           {this.state.person.map((item, i) =>{
             return(
               <h1>{item.id.first}</h1>
-              <span>
+              <fieldset>
+              <div>
               {item.name},
               {item.email}, 
               {item.aboutMe},
@@ -31,7 +32,8 @@ export default class UserList extends React.Component {
               {item.department},
               {item.gender},
               {item.joiningDate}
-              </span>
+              </div>
+              </fieldset>
             )
           })}
         <div>
